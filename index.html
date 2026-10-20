@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Fale Conosco</h2>
+    <form id="contact-form" action="https://formspree.io/f/SEU_ENDPOINT_AQUI" method="POST">
+      
+      <div class="form-group">
+        <label for="name">Nome completo</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+      </div>
+
+      <button type="submit" id="submit-btn">Enviar Mensagem</button>
+      <p id="form-status" class="status-message"></p>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
